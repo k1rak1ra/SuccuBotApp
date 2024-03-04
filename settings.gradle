@@ -1,0 +1,24 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/gapinc/hoodies-network")
+            credentials {
+                username = "k1rak1ra"
+                password = "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"
+            }
+        }
+    }
+}
+rootProject.name = "SuccuBotApp"
+include ':app'

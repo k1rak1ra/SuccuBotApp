@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SuccuBotApp" parent="Theme.MaterialComponents.DayNight">
+        <item name="actionBarStyle">@style/Custom.ActionBar</item>
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/pathHistory</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Custom.ActionBar" parent="Widget.MaterialComponents.Light.ActionBar.Solid">
+        <item name="background">@color/purple_700</item>
+    </style>
+
+    <style name="RoundedCardView" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MaterialCardView.Cut</item>
+    </style>
+
+
+    <style name="ShapeAppearanceOverlay.MaterialCardView.Cut" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">32dp</item>
+        <item name="cornerSizeTopLeft">32dp</item>
+        <item name="cornerSizeBottomRight">32dp</item>
+        <item name="cornerSizeBottomLeft">32dp</item>
+    </style>
+
+    <style name="ErrorCardView" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MaterialCardView.ErrorCut</item>
+    </style>
+
+
+    <style name="ShapeAppearanceOverlay.MaterialCardView.ErrorCut" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">5dp</item>
+        <item name="cornerSizeTopLeft">5dp</item>
+        <item name="cornerSizeBottomRight">5dp</item>
+        <item name="cornerSizeBottomLeft">5dp</item>
+    </style>
+
+</resources>

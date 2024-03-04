@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="net.k1ra.succubotapp.features.authentication.ui.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_authenticationSettingsFragment"
+            app:destination="@id/authenticationSettingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="net.k1ra.succubotapp.features.dashboard.ui.DashboardFragment"
+        android:label="DashboardFragment" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_robotFragment"
+            app:destination="@id/robotFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_appSettingsFragment"
+            app:destination="@id/appSettingsFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/robotFragment"
+        android:name="net.k1ra.succubotapp.features.robotStatus.ui.RobotFragment"
+        android:label="RobotFragment" >
+
+        <argument
+            android:name="robotStatus"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_robotFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_robotFragment_to_robotSettingsFragment"
+            app:destination="@id/robotSettingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/appSettingsFragment"
+        android:name="net.k1ra.succubotapp.features.appSettings.ui.AppSettingsFragment"
+        android:label="AppSettingsFragment" >
+        <action
+            android:id="@+id/action_appSettingsFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_appSettingsFragment_to_aboutSettingsFragment"
+            app:destination="@id/aboutSettingsFragment" />
+        <action
+            android:id="@+id/action_appSettingsFragment_to_accountSettingsFragment"
+            app:destination="@id/accountSettingsFragment" />
+        <action
+            android:id="@+id/action_appSettingsFragment_to_settingsManageServerFragment"
+            app:destination="@id/settingsManageServerFragment" />
+        <action
+            android:id="@+id/action_appSettingsFragment_to_settingsManageDevicesFragment"
+            app:destination="@id/settingsManageDevicesFragment" />
+        <action
+            android:id="@+id/action_appSettingsFragment_to_settingsManageUsersFragment"
+            app:destination="@id/settingsManageUsersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutSettingsFragment"
+        android:name="net.k1ra.succubotapp.features.appSettings.ui.AboutSettingsFragment"
+        android:label="AboutSettingsFragment" >
+        <action
+            android:id="@+id/action_aboutSettingsFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountSettingsFragment"
+        android:name="net.k1ra.succubotapp.features.appSettings.ui.AccountSettingsFragment"
+        android:label="AccountSettingsFragment" >
+        <action
+            android:id="@+id/action_accountSettingsFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsManageServerFragment"
+        android:name="net.k1ra.succubotapp.features.appSettings.ui.SettingsManageServerFragment"
+        android:label="SettingsManagerServerFragment" >
+        <action
+            android:id="@+id/action_settingsManagerServerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsManageDevicesFragment"
+        android:name="net.k1ra.succubotapp.features.appSettings.ui.SettingsManageDevicesFragment"
+        android:label="SettingsManageDevicesFragment" >
+        <action
+            android:id="@+id/action_settingsManageDevicesFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsManageUsersFragment"
+        android:name="net.k1ra.succubotapp.features.appSettings.ui.SettingsManageUsersFragment"
+        android:label="SettingsManageUsersFragment" >
+        <action
+            android:id="@+id/action_settingsManageUsersFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_settingsManageUsersFragment_to_userEditFragment"
+            app:destination="@id/userEditFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userEditFragment"
+        android:name="net.k1ra.succubotapp.features.appSettings.ui.UserEditFragment"
+        android:label="UserEditFragment" >
+        <action
+            android:id="@+id/action_userEditFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <argument
+            android:name="user"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/robotSettingsFragment"
+        android:name="net.k1ra.succubotapp.features.robotStatus.ui.RobotSettingsFragment"
+        android:label="RobotSettingsFragment" >
+        <action
+            android:id="@+id/action_robotSettingsFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <argument
+            android:name="robotStatus"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/authenticationSettingsFragment"
+        android:name="net.k1ra.succubotapp.features.authentication.ui.AuthenticationSettingsFragment"
+        android:label="fragment_authentication_settings"
+        tools:layout="@layout/fragment_authentication_settings" />
+</navigation>

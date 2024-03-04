@@ -1,0 +1,9 @@
+== SuccuBotApp
+A reverse-engineered replacement app for the Lefant M1 robot vacuum, designed to work with the SuccuBotServer replacement backend
+
+== Features
+* In-app robot discovery and pairing
+* Advanced in-app server configuration/user management
+* Live house mapping as the robot runs
+* Control of all essential robot functions and settings, including schedules
+* Support for multiple robots

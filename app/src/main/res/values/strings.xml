@@ -1,0 +1,170 @@
+<resources>
+    <string name="app_name">SuccuBotApp</string>
+
+    <string name="loading_map_failed">Failed to load map :(</string>
+
+    <string name="username">Email or username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="incorrect_credentials">Incorrect credentials</string>
+    <string name="connection_failed">Connection failed. Check your Internet</string>
+    <string name="logging_you_in">Logging you in</string>
+
+    <string name="settings">Settings</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="loading_dashboard">Loading dashboard</string>
+
+    <string name="error">Error</string>
+    <string name="try_again">Try again</string>
+
+    <string name="standby">Standing by</string>
+    <string name="charging">Charging</string>
+    <string name="relocating">Relocating</string>
+    <string name="goto_charge">Returning to charger</string>
+    <string name="sleep">Sleeping</string>
+    <string name="smart">Vacuuming</string>
+    <string name="unknown_status">Unknown status</string>
+    <string name="robot_battery">%1$d%%</string>
+
+    <string name="last_cleaned">Last cleaned %s</string>
+    <string name="cleaned">m² cleaned</string>
+    <string name="minutes">minutes</string>
+
+    <string name="start_cleaning">Start\ncleaning</string>
+    <string name="pause_cleaning">Pause\ncleaning</string>
+    <string name="return_to_charger">Return to\ncharger</string>
+
+    <string name="sending_command">Sending command</string>
+    <string name="sent_command">Command sent successfully</string>
+    <string name="command_failed">Failed to send command. Is the robot online? Are you online?</string>
+
+    <string name="robot_err_mop">Robot is missing the mop</string>
+    <string name="robot_err_stuck">Robot is stuck</string>
+    <string name="robot_err_unknown">Robot is sending an unknown error code</string>
+
+    <string name="logout">Log out</string>
+    <string name="settings_account">Account</string>
+    <string name="settings_about">About</string>
+    <string name="settings_manage_users">Manage users</string>
+    <string name="settings_manage_server">Manage server</string>
+    <string name="settings_manage_devices">Manage devices</string>
+
+    <string name="account_info">Account info</string>
+    <string name="email">Email</string>
+    <string name="display_name">Display name</string>
+    <string name="save">Save</string>
+
+    <string name="change_password">Change password</string>
+    <string name="old_password">Old password</string>
+    <string name="new_password">New password</string>
+    <string name="confirm_new_password">Confirm new password</string>
+    <string name="updating_password">Updating password</string>
+    <string name="passwords_dont_match">Passwords don\'t match</string>
+    <string name="password_too_short">Too short, must be at least 6 characters</string>
+
+    <string name="profile_picture">Profile picture</string>
+    <string name="upload_new_picture">Select new</string>
+
+    <string name="security">Security</string>
+    <string name="log_me_out_everywhere">Log me out everywhere</string>
+
+    <string name="logging_out">Logging out</string>
+    <string name="uploading_image">Uploading image</string>
+    <string name="updating_name_and_email">Updating name and email</string>
+    <string name="updated_successfully">Updated successfully</string>
+    <string name="field_cannot_be_empty">Field cannot be empty</string>
+    <string name="email_not_unique">Another user is already using this email</string>
+
+    <string name="loading_server_settings">Loading server settings</string>
+    <string name="general_settings">General settings</string>
+    <string name="min_password_length">Minimum password length</string>
+    <string name="max_image_size">Maximum image size in bytes</string>
+    <string name="current_base_url">Current base url (with ending /)</string>
+    <string name="ldap_login_enabled">LDAP login enabled</string>
+    <string name="saving_server_settings">Saving server settings</string>
+
+    <string name="ldap_connection_settings">LDAP connection settings</string>
+    <string name="ldap_server">LDAP server (ldap://example.com)</string>
+    <string name="ldap_bind_user">LDAP bind user (Blank for none)</string>
+    <string name="ldap_bind_password">LDAP bind password (Blank for none)</string>
+    <string name="ldap_tls_enabled">LDAP TLS enabled</string>
+    <string name="saving_ldap_connection_settings">Saving LDAP connection settings</string>
+
+    <string name="ldap_user_settings">LDAP user settings</string>
+    <string name="ldap_user_dn">LDAP user DN</string>
+    <string name="ldap_user_filter">LDAP user filter</string>
+    <string name="ldap_user_uid_attribute">LDAP user UID attribute</string>
+    <string name="ldap_username">Enter a username</string>
+    <string name="ldap_test_user">Test user</string>
+    <string name="saving_ldap_user_settings">Saving LDAP user settings</string>
+
+    <string name="ldap_group_settings">LDAP group settings</string>
+    <string name="ldap_group_dn">LDAP group DN</string>
+    <string name="ldap_group_filter">LDAP group filter</string>
+    <string name="ldap_admin_group_name">LDAP admin group name</string>
+    <string name="ldap_test_group">Test user\'s groups</string>
+    <string name="saving_ldap_group_settings">Saving LDAP group settings</string>
+    <string name="testing_ldap">Testing LDAP</string>
+    <string name="ldap_test_result">LDAP test result</string>
+    <string name="user_groups">User belongs to groups:</string>
+    <string name="ldap_is_admin">User is an admin</string>
+    <string name="dismiss">Dismiss</string>
+
+    <string name="mqtt_connection_settings">MQTT connection settings</string>
+    <string name="mqtt_server">MQTT server (ssl://example.com:port)</string>
+    <string name="saving_mqtt_connection_settings">Saving MQTT connection settings</string>
+    <string name="update_mqtt_certificate">Update MQTT CA certificate</string>
+    <string name="mqtt_connected">MQTT connected</string>
+    <string name="mqtt_failed_to_connect">MQTT failed to connect \n %s</string>
+
+    <string name="loading_devices">Loading devices</string>
+    <string name="no_devices_found">No robots found\nPlease make sure they are connected to the network\nThen, relaunch this page</string>
+    <string name="dashboard_no_devices_found">No robots have been set up\nPlease go to settings and pair one</string>
+    <string name="last_seen">Last seen %s</string>
+    <string name="web_key">Encryption key for HTTP</string>
+    <string name="mqtt_key">Encryption key for MQTT</string>
+    <string name="save_and_test">Save and test</string>
+    <string name="saving_and_testing">Saving and testing</string>
+    <string name="mqtt_key_valid">MQTT key is valid</string>
+    <string name="web_key_valid">HTTP key is valid</string>
+    <string name="mqtt_key_invalid">MQTT key is invalid or robot is offline</string>
+    <string name="web_key_invalid">HTTP key is invalid or robot is offline</string>
+    <string name="restart_robot">Robot added successfully. Reboot it in order to update the database with the latest status.</string>
+    <string name="robot_key_test_result">Robot key test result</string>
+
+    <string name="loading_users">Loading users</string>
+    <string name="native_user">Native</string>
+    <string name="ldap_user">LDAP</string>
+    <string name="user_is_you">This user is you.\nPlease use the regular account settings to manage your account while you\'re logged into it.</string>
+    <string name="user_password_reset">Password for user (Blank for unchanged)</string>
+    <string name="user_profile_picture_reset">Select profile picture</string>
+    <string name="user_data_not_autosaved">Nothing here will be saved automatically. You must click save to apply the changes</string>
+
+    <string name="log_user_out_everywhere">Log user out everywhere</string>
+    <string name="delete_user_account">Delete this account</string>
+    <string name="edit_user">Edit user</string>
+    <string name="create_user">Create user</string>
+    <string name="user_not_found">This user does not exist. Please exit</string>
+    <string name="user_not_native">You cannot change these parameters on a non-native user</string>
+    <string name="updating_user">Updating user</string>
+    <string name="deleting_user">Deleting user</string>
+    <string name="deleted_user">Deleted user</string>
+
+    <string name="robot_settings">Robot settings</string>
+    <string name="robot_name">Robot name</string>
+    <string name="suction_power">Suction power</string>
+    <string name="water_flow">Mop water flow</string>
+    <string name="speaker_volume">Speaker volume</string>
+    <string name="continue_cleaning_after_charge">Continue cleaning after charge</string>
+
+    <string name="automatic_daily_cleaning">Automatic daily cleaning</string>
+    <string name="enable_daily_cleaning">Enable automatic daily cleaning</string>
+    <string name="daily_autoclean_time">Daily autoclean time</string>
+    <string name="failed_to_parse_time">Failed to parse the time. Is it in the correct format?</string>
+
+    <string name="authentication_settings">Authentication settings</string>
+    <string name="server_endpoint">Endpoint URL (https://example.net/succubot/)</string>
+
+    <string name="app_by">k1ra, 2024</string>
+    <string name="version">Version %s</string>
+</resources>
